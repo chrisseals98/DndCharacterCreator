@@ -1,8 +1,8 @@
 
 3610 project requirements: 
 
-Git: https://github.com/chrisseals98/DndCharacterCreator
-
+GitHub: https://github.com/JivanTaj/DndCharacterCreator
+(branch this) 
 
 ------------ Types of attack: ----------
 -- XSS
@@ -31,10 +31,10 @@ Git: https://github.com/chrisseals98/DndCharacterCreator
 	-- 
 
 
------------- Need: ---------- 
+------------ feature: 		Priority:	Done? ---------- 
 
-Strong password req. 
-input valifation (regex etc.)
-password hashing
-URL traversal
-account permissions
+Strong password req. 		1		no
+input valifation (regex etc.)	1		no
+password hashing		2		no	
+URL traversal			1		no
+account permissions		1		no 
