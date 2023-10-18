@@ -1,0 +1,20 @@
+
+
+----------- Important features: -------------- 
+
+Hashing/salt for passwords: 
+--PBDKF 2 : https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.cryptography.keyderivation.keyderivation.pbkdf2?view=aspnetcore-7.0
+
+password rules: 
+--
+
+login rules/times: 
+-- 
+
+cookie details: 
+-- 
+
+basic attack proofs: 
+-- 
+
+
