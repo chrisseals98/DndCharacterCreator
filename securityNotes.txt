@@ -4,7 +4,8 @@
 
 Hashing/salt for passwords: 
 --PBDKF 2:
-  --In cryptography, PBKDF1 and PBKDF2 (Password-Based Key Derivation Function 1 and 2) are key derivation functions with a    sliding computational cost, used to reduce vulnerability to brute-force attacks. -- Wikipedia 
+  --In cryptography, PBKDF1 and PBKDF2 (Password-Based Key Derivation Function 1 and 2) are key derivation functions with a    sliding computational cost, used to reduce vulnerability to brute-force attacks. -- Wikipedia
+  -- So it uses PBKDF2, which is an algorithm that just uses SHA256 along with a 128 bit salt, some key, and does it 10000 iterations. Does that sound like enough to explain it to him if he asks
 
 password rules: 
 --
