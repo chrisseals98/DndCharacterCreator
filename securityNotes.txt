@@ -3,7 +3,8 @@
 ----------- Important features: -------------- 
 
 Hashing/salt for passwords: 
---PBDKF 2 : https://learn.microsoft.com/en-us/dotnet/api/microsoft.aspnetcore.cryptography.keyderivation.keyderivation.pbkdf2?view=aspnetcore-7.0
+--PBDKF 2:
+  --In cryptography, PBKDF1 and PBKDF2 (Password-Based Key Derivation Function 1 and 2) are key derivation functions with a    sliding computational cost, used to reduce vulnerability to brute-force attacks. -- Wikipedia 
 
 password rules: 
 --
