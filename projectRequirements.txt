@@ -27,7 +27,7 @@ GitHub: https://github.com/JivanTaj/DndCharacterCreator
 	-- 
 -- URL traversal
 	-- how to protect 
-	--
+	-- 
 	-- 
 
 
@@ -36,5 +36,5 @@ GitHub: https://github.com/JivanTaj/DndCharacterCreator
 Strong password req. 		1		no
 input valifation (regex etc.)	1		no
 password hashing		2		no	
-URL traversal			1		no
+URL traversal			1		yes
 account permissions		1		no 
