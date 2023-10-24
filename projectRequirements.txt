@@ -27,7 +27,7 @@ GitHub: https://github.com/JivanTaj/DndCharacterCreator
 	-- 
 -- URL traversal
 	-- how to protect 
-	-- 
+	-- Restrict access to character actions based on the identity of the user logged in, if it doesn't match with the character they are interacting with, then we deny access.
 	-- 
 
 
