@@ -10,8 +10,9 @@ Hashing/salt for passwords:
 password rules: 
 -- A password must have the following: non alphanumeric characters, lowercase and uppercase characters, digits, a required length of at least 8 characters, and at least 1 unique character. (Look in Program.cs lines 22 - 28).
 
-login rules/times: 
+login rules/time
 -- A lockout is started if the user cannot login in an account in, at max, 5 attempts. Once the number of attempts has maxed out, a lockout of 5 minutes is started. This lockout can be applied to new users. (Look in Program.cs lines 31-33 / Enabled in Login.cshtml.cs on line 114)
+
 
 cookie details: 
 -- 
