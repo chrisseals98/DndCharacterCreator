@@ -13,11 +13,12 @@ password rules:
 login rules/time
 -- A lockout is started if the user cannot login in an account in, at max, 5 attempts. Once the number of attempts has maxed out, a lockout of 5 minutes is started. This lockout can be applied to new users. (Look in Program.cs lines 31-33 / Enabled in Login.cshtml.cs on line 114)
 
-
 cookie details: 
 -- 
 
 basic attack proofs: 
+-- brute force 
+-- url traversal
 -- 
 
 
