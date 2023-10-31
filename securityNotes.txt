@@ -11,7 +11,7 @@ password rules:
 --
 
 login rules/times: 
--- 
+-- [need notes here]
 
 cookie details: 
 -- 
