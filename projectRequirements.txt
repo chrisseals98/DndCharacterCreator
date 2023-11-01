@@ -37,6 +37,6 @@ Strong password req. 		1		yes
 input valifation (regex etc.)	1		no
 password hashing		2		yes	
 URL traversal			1		yes
-account permissions		1		no 
+account permissions		1		yes  
 password lockout 		2		yes 
 cookie modification 		2 		no 
