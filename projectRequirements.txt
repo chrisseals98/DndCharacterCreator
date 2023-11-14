@@ -19,8 +19,8 @@ GitHub: https://github.com/JivanTaj/DndCharacterCreator
 	-- 
 -- cookie attacks 
 	-- how to protect 
-	--
-	-- 
+	-- Restrict access to cookies to only http requests, so don't allow access via client side scripting.
+	-- Set an expiration date to limit session hijacking.
 -- Brute force
 	--password lockouts 
 	--
@@ -28,16 +28,16 @@ GitHub: https://github.com/JivanTaj/DndCharacterCreator
 -- URL traversal
 	-- how to protect 
 	-- Restrict access to character actions based on the identity of the user logged in, if it doesn't match with the character they are interacting with, then we deny access.
-	-- 
+	-- Custom error page for 404 errors
 
 
 ------------ feature: 		Priority:	Done? ---------- 
 
 Strong password req. 		1		yes
-custom error messages		1 		no? 
-input valifation (regex etc.)	1		no
+custom error messages		1 		yes
+input valifation (regex etc.)	1		yes
 password hashing		2		yes	
 URL traversal			1		yes
 account permissions		1		yes  
 password lockout 		2		yes 
-cookie modification 		2 		no 
+cookie modification 		2 		yes

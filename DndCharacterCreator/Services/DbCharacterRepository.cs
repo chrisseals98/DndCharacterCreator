@@ -26,7 +26,7 @@ namespace DndCharacterCreator.Services
         {
             var character = await _db.Characters
                 .Include(u => u.Player)
-                .FirstAsync(c => c.Id == id);
+                .FirstOrDefaultAsync(c => c.Id == id);
             return character;
         }
 
