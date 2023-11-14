@@ -6,11 +6,11 @@ GitHub: https://github.com/JivanTaj/DndCharacterCreator
 
 ------------ Types of attack: ----------
 -- XSS
-	-- how to protect 
+	-- protected by password requirements and in built features 
 	--
 	-- 
 -- SQL injection
-	-- how to protect 
+	-- protected by password requirements and in built features 
 	--
 	-- 
 -- CSRF	
@@ -22,7 +22,7 @@ GitHub: https://github.com/JivanTaj/DndCharacterCreator
 	-- Restrict access to cookies to only http requests, so don't allow access via client side scripting.
 	-- Set an expiration date to limit session hijacking.
 -- Brute force
-	-- how to protect 
+	--password lockouts 
 	--
 	-- 
 -- URL traversal
@@ -34,9 +34,10 @@ GitHub: https://github.com/JivanTaj/DndCharacterCreator
 ------------ feature: 		Priority:	Done? ---------- 
 
 Strong password req. 		1		yes
+custom error messages		1 		yes
 input valifation (regex etc.)	1		yes
-password hashing		2		yes
+password hashing		2		yes	
 URL traversal			1		yes
-account permissions		1		yes
-custom 404 error page   3		yes
-secure cookies			1		yes
+account permissions		1		yes  
+password lockout 		2		yes 
+cookie modification 		2 		yes
