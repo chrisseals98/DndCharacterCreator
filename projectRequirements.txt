@@ -41,3 +41,20 @@ URL traversal			1		yes
 account permissions		1		yes  
 password lockout 		2		yes 
 cookie modification 		2 		yes
+
+
+Key Components of the Project should include:
+
+	Secure Design: Input validation exists for all the fields, even with javascript turned off. Error handling also exists along with a 404 page for unknown URL paths. Session handling exists as well for accounts.
+
+	Authentication and Authorization: This project uses Microsoft Identity for authentication and authorization. This ensures that characters owned by other accounts don't get affected by accounts that don't own the character.
+
+	Data Encryption: This project uses Microsoft Identity which uses PBKDF2. This is an algorithm that uses SHA256 along with a 128 bit salt, a random key, and 10000 iterations. The project also redirects http calls to https automatically.
+
+	Session Handling: Session handling is also implemented using Microsoft Identity with services in the Program.cs file. It uses cookies for sessions that are only accessible by http and have a short expiration date.
+
+	Error Handling: Error handling is implemented to ensure exceptions aren't thrown, and a 404 page displays if some error does occur.
+
+	Code Review: We have tested and used Visual Studio's code analysis to ensure proper coding practices.
+
+	Documentation: This documentation is included in this project.
