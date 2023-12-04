@@ -20,10 +20,23 @@ builder.Services.AddScoped<ICharacterRepository, DbCharacterRepository>();
 builder.Services.Configure<IdentityOptions>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
-    options.Password.RequireNonAlphanumeric = false;
-    options.Password.RequireLowercase = false;
-    options.Password.RequireUppercase = false;
-    options.Password.RequireDigit = false;
+    options.Password.RequireNonAlphanumeric = true;
+    options.Password.RequireLowercase = true;
+    options.Password.RequireUppercase = true;
+    options.Password.RequireDigit = true;
+    options.Password.RequiredLength = 8;
+    options.Password.RequiredUniqueChars = 1;
+    options.User.RequireUniqueEmail = true;
+
+    options.Lockout.AllowedForNewUsers = true;
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+    options.Lockout.MaxFailedAccessAttempts = 5;
+});
+
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.Cookie.HttpOnly = true;
+    options.ExpireTimeSpan = TimeSpan.FromMinutes(5);
 });
 
 var app = builder.Build();
@@ -40,6 +53,7 @@ else
     app.UseHsts();
 }
 
+app.UseStatusCodePagesWithRedirects("/Home/Error/{0}");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 

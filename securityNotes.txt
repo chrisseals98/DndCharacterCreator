@@ -1,0 +1,25 @@
+
+
+----------- Important features: -------------- 
+
+Hashing/salt for passwords: 
+--PBDKF 2:
+  --In cryptography, PBKDF1 and PBKDF2 (Password-Based Key Derivation Function 1 and 2) are key derivation functions with a    sliding computational cost, used to reduce vulnerability to brute-force attacks. -- Wikipedia
+  -- So it uses PBKDF2, which is an algorithm that just uses SHA256 along with a 128 bit salt, some key, and does it 10000 iterations. Does that sound like enough to explain it to him if he asks
+
+password rules: 
+-- A password must have the following: non alphanumeric characters, lowercase and uppercase characters, digits, a required length of at least 8 characters, and at least 1 unique character. (Look in Program.cs lines 22 - 28).
+
+login rules/time
+-- A lockout is started if the user cannot login in an account in, at max, 5 attempts. Once the number of attempts has maxed out, a lockout of 5 minutes is started. This lockout can be applied to new users. (Look in Program.cs lines 31-33 / Enabled in Login.cshtml.cs on line 114)
+
+cookie details: 
+-- Cookies are only accessible in the http requests, so client side scripts can't access them
+-- Cookies have an expiration date of 5 minutes to help protect against session hijacking
+
+basic attack proofs: 
+-- brute force 
+-- url traversal
+-- 
+
+
